@@ -9,3 +9,4 @@ Helpful Links
 
 * GitHub Repo: https://github.com/JustinDSN/FEWD_14_SF_Students
 * Command Line Tutorial: http://www.ee.surrey.ac.uk/Teaching/Unix/
+* Dash: https://dash.generalassemb.ly
