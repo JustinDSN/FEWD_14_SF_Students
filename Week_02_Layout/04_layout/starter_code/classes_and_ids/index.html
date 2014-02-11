@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Classes and IDs</h1>
+
+    <p>Say we have a notification to style, with an id of <code>notification</code>.<p>
+
+    <div id="notification">
+      This has an <strong>id</strong> of <code>notification</code>, so it is selected in CSS with <code>#notification</code>. Check it out.
+    </div>
+
+    <p>But what if we have many messages on the page which are meant to look similar?</p>
+
+    <div class="message">
+      This is in an element with a <strong>class</strong> of <code>message</code>, so it can be selected in CSS with <code>.message</code>.
+    </div>
+
+    <div class="message">
+      This is in another element with a <strong>class</strong> of <code>message</code>, so it gets styled too.
+    </div>
+
+    <div class="message">
+      A third element with a <strong>class</strong> of <code>message</code>, for good measure. One CSS selector styles all of these.
+    </div>
+
+    <h2>IDs are singular, Classes are plural</h2>
+
+    <p>An ID is meant to be used only once in a given HTML document. A given element can have only one ID.</p>
+
+    <p>A class can be reused as many times as needed in a given HTML document. A given element can have multiple classes.</p>
+
+    <h2>Using Multiple Classes</h2>
+
+    <p>An element can be given multiple classes, separated by spaces, such as <code>class="foo bar baz"</code>.</p>
+
+    <div class="message error">
+      This has <code>class="message error"</code>, meaning it has two classes: <code>message</code> and <code>error</code>. It will get styles from <code>.message</code> and <code>.error</code>. The styles for <code>.error</code> override the default styles, which we achieve by placing them after the styles for <code>.message</code>.
+    </div>
+
+    <h2>Your Turn</h2>
+
+    <p>Add a new element to the page below the error message, that will serve as a success message, and style it to be green.</p>
+  </body>

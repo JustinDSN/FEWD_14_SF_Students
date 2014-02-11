@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+	padding: 3em;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	background: #FFF;
+	color: #444;
+	max-width: 40em;
+	border-left: 6px solid #DDD;
+}
+
+a {
+	color: #D00;
+	text-decoration: none;
+	-webkit-transition: all 300ms;
+}
+a:hover {
+	color: #A00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: normal;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+h2 a {
+	color: inherit;
+}
+h2 a:hover {
+	color: #D00;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: normal;
+	color: #CCC;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	text-align: right;
+}
+
+img {
+	display: block;
+	margin: 10px 0;
+	max-width: 100%;
+}
+
+
+header h2 {
+	font-size: 1.5em;
+	margin-bottom: .5em;
+}
+
+footer {
+	color: #BBB;
+}
+
+header nav a {
+	display: inline-block;
+	font-size: 1.25em;
+	margin-right: .75em;
+	color: #DDD;
+	border-bottom: 2px solid #EEE;
+}
+header nav a:hover {
+	color: black;
+	border-bottom-color: #BBB;
+}
+
+article {
+	border-bottom: 1px solid #DDD;
+	margin: 3em 0;
+	padding-bottom: 1.5em;
+}
+article p:first-letter {
+	float: left;
+	font-size: 6em;
+	line-height: 1;
+	color: #DDD;
+	margin: -.1em .1em 0 -.1em;
+}
