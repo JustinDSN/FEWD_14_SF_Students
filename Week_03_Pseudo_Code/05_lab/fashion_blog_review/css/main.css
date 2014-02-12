@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 3em;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	background: #FFF;
+	color: #444;
+	width: 60em;
+	border-left: 6px solid #DDD;
+}
+
+a {
+	color: #D00;
+	text-decoration: none;
+	-webkit-transition: all 300ms;
+}
+a:hover {
+	color: #A00;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	float: left;
+	width: 16.66667%;
+	margin: 0;
+	padding: 0;
+}
+
+header nav a {
+	display: block;
+	font-size: 1.25em;
+	color: white;
+	background: black;
+	margin-right: 1px;
+	padding: 15px 0;
+	text-align: center;
+}
+header nav a:hover {
+	color: white;
+	background: #900;
+}
