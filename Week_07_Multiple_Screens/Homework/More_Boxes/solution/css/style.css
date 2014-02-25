@@ -1,0 +1,158 @@
+/*Default styles*/
+*{
+	/*use box sizing because of borders*/
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+div {
+    border:1px solid black;
+}
+.no-border{
+	border:none;
+}
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+body{
+	width:96%;
+	margin-left:2%;
+}
+/*Upper half styles*/
+.head-col{
+	width: 38%;
+	float:left;
+}
+.head-col>div{
+	clear:left;
+}
+.head-col>div:first-child>div{
+	float:left;
+	height: 50px;
+	width: 31%;	
+	margin:20px 0 20px 1%;
+}
+.head-col>div:nth-child(2)>div{
+	height: 30px;
+	width: 90%;
+	margin-left: 5%;
+}
+.head-col>div:nth-child(2)>div:first-child{
+	margin-top: 15px;
+}
+#centerHead{
+	width: 23%;
+}
+#centerHead>div:first-child{
+	height: 50px;
+	width: 84%;
+	margin: 110px 0 0 8%;
+}
+#centerHead>div:nth-child(2){
+	height: 30px;
+	width: 60%;
+	margin-left: 20%;
+}
+
+/*Lower half styles*/
+#lower-half-wrapper{
+	float:left;
+	width:100%;
+	margin-top:20px;	
+}
+#bigPic,#smallPic{
+	float: left;
+	height: 400px;	
+	width: 50%;
+}
+.pic-header{
+	height: 50px;
+	width: 50%;
+	margin: 15px 0 0 25%;
+}
+#bigPic>div:nth-child(2){
+	height: 325px;
+	width: 80%;
+	margin-left: 10%;
+}
+#smallPic>div:nth-child(2)>div{
+	float: left;
+	height: 164px;
+	width: 50%;		
+}
+.user-profile{
+	height: 50px;
+	width: 100%;
+	margin-top: 112px;
+}
+.user-profile>div{
+	float: left;
+	height: 25px;
+	width: 10%;
+	margin:10px 0 0 2%;
+}
+.user-profile>div:first-child{
+	width: 23%;
+}
+.user-profile>div:nth-child(2){
+	margin-left: 37%;
+}
+
+@media screen and (max-width:768px){
+	body{
+		width:90%;
+		margin-left:5%;
+	}
+	.head-col>div:first-child>div,#bigPic>div:first-child{
+		float: none;
+		margin:0 auto;
+		width:80%;
+	}
+	#bigPic{
+		width: 60%
+	}
+	#bigPic>div:nth-child(2){
+		width: 100%;
+		margin-left: 0;
+	}
+	#smallPic{
+		width: 40%;
+	}
+	#smallPic>div:nth-child(2)>div{
+		width: 100%;
+	}
+	.head-col>div:nth-child(2)>div:first-child{
+		display: none;
+	}
+}
+
+@media screen and (max-width:480px){
+	body{
+		width:70%;
+		margin-left:15%;
+	}
+	#leftHead,#bigPic,.user-profile{
+		display: none;
+	}
+	#rightHead,#centerHead,#smallPic{
+		width:100%;
+	}
+	#smallPic>div:nth-child(2)>div{
+		width:50%;
+		clear:none;
+		float:left;
+	}
+	#smallPic>div:first-child{
+		margin:0 0 10px 5%;
+		width:90%;
+	}
+	#smallPic>div:nth-child(2)>div{
+		margin:0;
+	}
+	
+}
