@@ -1,0 +1,158 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.right {
+	float: right; 
+}
+
+.left {
+	float: left; 
+}
+.col-2{
+     width:200px;
+}
+.col-5{
+     width:500px;
+}
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+h1{
+     text-align: center;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+     text-align: right;
+     margin-top: 50px;
+     width: 738px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+@-webkit-keyframes falling-egg{
+     /*What style will make the egg start at the top of the game container?*/
+
+     /*What style will make the egg appear at the bottom of the container? Hint: Use Chrome inspector and play around with an egg*/;
+}
+@keyframes falling-egg{
+    /*The same code for the webkit keyframes goes here*/
+}
+#instructions{
+     margin-top:50px;
+}
+#score{
+     font-size:20px;
+     margin-top:50px;
+}
+#egg-drop-game{
+     height:500px;
+     border:2px solid red;
+     position: relative;
+     margin:0 auto;
+}
+#basket{
+     height:21px;
+     width:46px;
+     background:pink;
+     border-radius: 0 0 10px 10px;
+     border:2px solid DeepPink;
+     position: relative;
+     margin:475px 0 0 250px;
+}
+#basket:before{
+     content: "";
+     height:20px;
+     width:46px;
+     border:2px solid DeepPink;
+     border-radius:15px 15px 0 0;
+     position: absolute;
+     top:-24px;
+     left:-2px;
+}
+.egg{
+     height:25px;
+     width:20px;
+     border-radius:15px;
+     position: absolute;
+}
+.egg-left,.egg-right{
+     background:green;
+     float: left;
+     width:10px;
+     height:30px;
+     /*When the user fails to catch the egg, we add the break-egg class (see below). 
+     Put some CSS here that will make the egg "transition" to the broken state.*/
+}
+.egg-left{
+     border-radius: 10px 0 0 10px/25px 0 0 10px;
+}
+.egg-right{
+     border-radius: 0 10px 10px 0/0 25px 10px 0;
+}
+.break-egg.egg-left{
+     -webkit-transform:rotateZ(-90deg);
+     margin:7px 0 0 -10px;
+}
+.break-egg.egg-right{
+     -webkit-transform:rotateZ(90deg);
+     margin:7px 0 0 10px;
+}
+.slow-falling-egg,.medium-falling-egg,.fast-falling-egg{
+     -webkit-animation-name: /*What is the name of our animation?*/;
+     -webkit-animation-iteration-count: /*How many times do we want the animation to happen per egg?*/;
+     -webkit-animation-duration: /*How long should the slow falling egg take to reach the bottom?*/;
+     -webkit-animation-timing-function: linear;
+     -webkit-animation-play-state: running;
+     -webkit-animation-fill-mode: forwards;
+}
+.medium-falling-egg{
+     -webkit-animation-duration: /*How long should the medium speed egg take to reach the bottom?*/;
+}
+.fast-falling-egg{
+     -webkit-animation-duration: /*How long should the fast falling egg take to reach the bottom?*/;
+}

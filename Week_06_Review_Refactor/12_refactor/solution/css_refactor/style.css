@@ -1,0 +1,134 @@
+/*Remove inline*/
+/*Gotes to*/
+select{
+     width:150px;
+}
+
+/*Combine multiples*/
+#buttons-wrapper{
+     padding:10px;
+     border:1px solid black;
+     background:orange;
+}
+#buttons-wrapper>form{
+     padding:10px;
+     border:1px solid black;
+}
+/*Goes to*/
+#buttons-wrapper,#buttons-wrapper>form{
+     padding:10px;
+     border:1px solid black;
+}
+#buttons-wrapper{
+     background:orange;
+}
+
+/*Rename classes/ids for readability*/
+#img1{
+     margin-top: 50px;
+}
+/*Goes to*/
+#image-to-vote-on{
+     margin-top: 50px;
+}
+/*Ask: Where else do I have to change this?*/
+
+/*Organize CSS*/
+.list-item{
+     width:200px;
+}
+#container>.col{
+     width:50%;
+}
+footer{
+     text-align: right;
+}
+a:hover{
+     color:purple;
+}
+header>ol{
+     list-style: none;
+}
+body{
+     background-image:url(../images/anImage.png);
+}
+#navigation-wrapper{
+     float:left;
+}
+a{
+     color:red;
+}
+header{
+     height:80px;
+}
+#container>img{
+     border:1px solid red;
+}
+footer>#company-name{
+     font-weight: bold;
+}
+/*Goes to*/
+/*Global*/
+a{
+     color:red;
+}
+a:hover{
+     color:purple;
+}
+body{
+     background-image:url(../images/anImage.png);
+}
+/*Header*/
+header{
+     height:80px;
+}
+header>ol{
+     list-style: none;
+}
+.list-item{
+     width:200px;
+}
+#navigation-wrapper{
+     float:left;
+}
+/*Container*/
+#container>img{
+     border:1px solid red;
+}
+#container>.col{
+     width:50%;
+}
+/*Footer*/
+footer{
+     text-align: right;
+}
+footer>#company-name{
+     font-weight: bold;
+}
+
+
+/*Create classes for large css changes
+$("#container").css({background:"red",fontSize:"12px",color:"purple",boxShadow:"0 0 10px #ccc";})
+*/
+
+/*Goes to
+$("#container").addClass("container-style");
+*/
+.container-style{
+     background:red;
+     font-size:12px;
+     color:purple;
+     box-shadow:0 0 10px #ccc;    
+}
+/*Remove unnecessary CSS */
+#myDiv{
+     margin:10px 0px 0px 20px;
+}
+div{
+     width:100%;
+}
+
+/*Goes to*/
+#myDiv{
+     margin:10px 0 0 20px;
+}

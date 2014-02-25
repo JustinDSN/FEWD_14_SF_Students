@@ -1,0 +1,17 @@
+Features:
+1) 4 cards (2 pairs) to match (Add more cards if you want a challenge)
+2) Reset button, start game button
+3) Message that congratulates the gamer when they match all cards and tells them how many moves it took them.
+
+Optional: 
+1) Cheat mode (displays the card that matches the currently selected card)
+
+Instructions
+1) Build the HTML page with all the cards
+Hint: You'll probably want to have a div that encapsulates all the game related elements (cards, buttons, winner text), each card should have a card class and a class that says what it is (like the Jacks card would have the class "jacks card")
+2) Style the cards and game play area
+Hint: When a card is "selected" you should show the front of the card. At all other times the back of the card should be showing
+3) Write out the pseudo code for defining how the game is played
+4) Translate pseudo code into JS
+
+Happy Coding :)

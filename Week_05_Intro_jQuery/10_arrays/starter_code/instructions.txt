@@ -1,0 +1,1 @@
+View the obfuscated code, see how the site works. Use jQuery and Arrays to recreate the functionality. Remember to write your pseudo code before starting the task.

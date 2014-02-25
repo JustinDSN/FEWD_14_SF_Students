@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+	
+		<title>Blank Template</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>Matching cards game</h1>
+			</header>
+			
+			<div id="game">
+				<h2 id="gameOver">Congratulations! You've matched all cards in <span id="number-of-moves"></span> moves</h2>
+				<div id="game-cards" class="clearfix">
+					<div class="king cards"></div>
+					<div class="king cards"></div>
+					<div class="queen cards"></div>
+					<div class="queen cards"></div>
+				</div>
+				<div id="game-control-buttons">
+					<button id="start">Start game</button>
+					<button id="reset">Reset game</button>
+					<input type="checkbox" id="cheat"> Cheat mode
+				</div>
+			</div>
+
+			<footer>
+				&copy; General Assembly
+			</footer>
+		</div><!-- #container --> 
+	</body>
+</html>

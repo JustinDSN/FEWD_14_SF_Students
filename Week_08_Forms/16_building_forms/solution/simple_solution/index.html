@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Todo List</title>
+		<link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
+	</head>
+	<body>
+		<div id="app">
+			<header>
+				<form id="new">
+					<input id="newItem"> <button id="add">Add to List</button>
+				</form>
+			</header>
+			<ul id="todos"></ul>
+			<footer>
+				<div class="status">
+					<p>
+						You have <span id="count">0</span> todos left.
+					</p>
+				</div>
+				<div class="controls">
+					<button id="clear">Clear List</button>
+					<button id="clearCompleted">Clear Completed</button>
+				</div>
+			</footer>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+     background: #000;
+     height: 80px; 
+     color:#ccc;
+     font-size:17px; 
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+nav ul li {
+     float:left;
+}
+
+     nav ul li a {
+          display:block;
+          height: 49px;
+          color:#ccc;
+          padding: 30px 18px 0 18px;
+          text-decoration: none;
+     }
+
+     nav ul li a:hover {
+          background:url(../images/bg_nav_rollover.png) repeat-x;
+          color:#FFF;
+     }
+
+.btn{
+     color: #ffffff;
+     background-color: #428bca;
+     border-color: #357ebd;
+     padding: 6px 12px;
+     margin-bottom: 0;
+     font-size: 14px;
+     font-weight: normal;
+     line-height: 1.5;
+     text-align: center;
+     white-space: nowrap;
+     vertical-align: middle;
+     cursor: pointer;
+     border: 1px solid transparent;
+     border-radius: 4px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     -o-user-select: none;
+     user-select: none;
+}
+#image-to-vote-on,#buttons-wrapper{
+     margin: 0 auto;
+     width: 500px;
+     text-align: center;
+     display: block;
+}
+#image-to-vote-on{
+     margin-top: 50px;
+}
+#buttons-wrapper{
+     margin-top:20px;
+}
+#image-to-vote-on+div{
+     text-align: center;
+     font-size: 24px;
+     color: green;
+}

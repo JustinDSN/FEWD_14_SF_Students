@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+	
+		<title>Blank Template</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>My Search page</h1>
+			</header> 	
+			<div id="main">
+				
+			</div>
+			<footer>
+			
+			</footer>
+		</div><!-- #container --> 
+		<script type="text/javascript">
+			function queryObj() {
+			    var result = {}, queryString = location.search.slice(1), re = /([^&=]+)=([^&]*)/g, m;
+
+			    while (m = re.exec(queryString)) {
+			        result[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+			    }
+
+			    return result;
+			}
+			$("#main").append("You searched for " + queryObj()["q"]);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+html {
+  background: #fafafa url(images/background@2x.png) center top / 26px 26px repeat;
+  font: 13px/26px "Helvetica Neue", Verdana, sans-serif;
+}
+body {
+  width: 702px;
+  margin: 52px auto;
+  box-shadow: 0 9px 63px rgba(0, 0, 0, 0.22);
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  background: -webkit-linear-gradient(90deg, #ACABAD, #ECECEC);
+  color: #5F5F5F;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 51px;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: #A1A1A1;
+  border-right-color: #959595;
+  border-bottom-color: #7E7E7E;
+  border-left-color: #959595;
+}
+form {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #959595;
+  border-top-width: 0;
+  padding: 25px 25px 26px;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+fieldset:not(:first-child) {
+  margin-top: 26px;
+}
+legend {
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+textarea {
+  height: 76px;
+  width: 466px;
+  padding: 0;
+  margin: 0;
+}
+label {
+  position: absolute;
+  left: 0;
+  width: 120px;
+}
+.form-row {
+  padding-left: 130px;
+  position: relative;
+  margin-bottom: 13px;
+}
+textarea,
+input[type="text"],
+select {
+  border: 1px solid #BCBCBC;
+  padding: 6px;
+  margin: 0;
+  background: #FFF9E2;
+  border-radius: 4px;
+}
+textarea:focus,
+input[type="text"]:focus,
+select:focus {
+  background: white;
+  border: 1px solid #99E2FF;
+  outline: none;
+  box-shadow: 0 0 6px #99E2FF;
+}
+input[type="text"] {
+  width: 326px;
+  height: 10px;
+  margin: 2px 0 0;
+}
+input[type="text"].phone {
+  width: 50px;
+}
+.address-fields .address-city {
+  width: 130px;
+}
+.address-fields .address-state,
+.address-fields .address-postal-code {
+  width: 80px;
+}
+.address-fields .address-street-address,
+.address-fields .address-line-2 {
+  display: block;
+}
+.name-fields input {
+  width: 154px;
+}
+textarea {
+  display: block;
+}
