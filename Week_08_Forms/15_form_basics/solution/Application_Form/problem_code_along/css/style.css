@@ -1,0 +1,121 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.form-row {
+  margin-bottom: 13px;
+  overflow: hidden;
+}
+
+.form-labels {
+  float: left;
+  width: 20%;
+}
+
+.form-fields {
+  float: left;
+  width:80%;
+}
+
+input[type='text'], textarea {
+  background:#FFFDE2;
+  border: 1px solid #BCBCBC;
+  padding: 6px;
+  margin: 0;
+  border-radius: 4px;
+}
+
+input[type='text']:focus, textarea:focus {
+  background: white;
+  border: 1px solid #99E2FF;
+  outline:none;
+  box-shadow: 0 0 6px #99E2FF;
+}
+input[name='address1'], input[name='address2']  {
+  display:block;
+  width: 360px;
+}
+
+textarea {
+  height: 76px;
+  width: 466px;
+  padding:6px;
+  margin: 0
+  display:block;
+}
+
+.phone {
+  width: 50px;
+}
